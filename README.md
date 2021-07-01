@@ -9,13 +9,14 @@ For this analysis, we are going to focus on demographic and educational informat
 2. Build a linear regression model that will help us to predict the life expectancy for the target population.
 
 ## Analysis
-1.
+
 Data Sources:
 Census data across the states in the US for the years 2005 – 2015.
 Demographic Data (census.gov)
 Death data across the states in the US for the years 2005 – 2015.
 NVSS - Mortality Data (cdc.gov)
-2.
+
+
 
 ## Results
 Explain the relationship between each factor, which will include analysis with each corresponding estimated age.
