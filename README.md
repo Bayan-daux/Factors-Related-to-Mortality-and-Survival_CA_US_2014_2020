@@ -21,7 +21,7 @@ First, use the Viral Records data from CA to estimate the mortality rate for eac
 
 Second, analyze the relationship between each main factor (sex, race/ethnicity, country of birth, education, marital status, veteran status, and income) and mortality rate of each age group in year 2014 – 2020. Predict the trend of mortality rate across the years in CA, and by county. Use statistical modelling that including all the possible factors to predict the life expectancy in CA. Explain the limitation and challenge posed by the data and the possibility of analyses bias. 
 
-Last, find the leading cause of death (top 10) for each age group in CA and by county. Compare to the leading cause of death estimated by CDC [5]. For 2020, further analyze the COVID on the affection of the mortality rate compare to other years in CA. 
+Last, find the leading cause of death (top 10) for each age group in CA and by county. Compare to the leading cause of death estimated by CDC [5]. For 2020, further analyze COVID on the affection of the mortality rate compare to other years in CA. 
 
 ## Machine Learning Model:
 
