@@ -7,7 +7,7 @@ Life expectancy has many different definitions based on the target analysis popu
 For this analysis, we are going to use the death data from the State of California (CA) to predict the life expectancy by sex, race/ethnicity, country of birth, education, marital status, veteran status, and income. Additionally, we are going to identify the top 10 causes of death in CA, and investigate the similarity and discrepancy of the cause of death between CA and the U.S. across states.
 ## Data Source: 
 
-The data used in the analysis reflect information collected and transformed by Viral Records Business Intelligence System (VRBIS) for the State of California in year 2014 – 2020. The death data derived from information entered on death certificates which is refreshed monthly [2]. The data source also includes the leading cause of death. 
+The data used in the analysis reflect information collected and transformed by Viral Records Business Intelligence System (VRBIS) for the State of California in year 2014 – 2020. The death data derived from information entered on death certificates which is refreshed monthly [2]. The data source also includes the cause of death. 
 
 The income level data in this analysis derived from United States Census Bureau American Community Survey (ACS) Data for the State of California by county [3]. The ACS does not produce income level information for mortality records specifically, therefore, ACS only contains the median income level data for overall population. Pooling 2014 – 2020 years of data as an additional factor that might provide estimate affect to life expectancy. 
 
