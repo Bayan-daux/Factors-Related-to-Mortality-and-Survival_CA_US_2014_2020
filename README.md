@@ -2,26 +2,27 @@
 
 ## Overview 
 
-Life expectancy has many different definitions based on the target analysis population. Life expectancy is generally intended to estimate the expected average number of years of life remaining at a given age [1]. There are many factors that affect the estimated age for the target population, such as gender, lifestyle, living condition, education level, etc. Nowadays, most of us are facing a variety of pressures. Due to environmental impacts coupled with climate change, the average life expectancy becomes complicated and harder to predict.
+Life expectancy has many different definitions based on the target analysis population. Life expectancy is generally intended to estimate the average number of years that a person might expect to live [1]. There are many factors that affect the estimated age for the target population such as gender, lifestyle, living condition, education level, etc. Nowadays, most of us are facing a variety of pressures. Due to environmental impacts coupled with climate change, the average life expectancy becomes more complicated and harder to predict.
 
-For this analysis, we are going to use the death data from the State of California (CA) to predict the life expectancy by sex, race/ethnicity, country of birth, education, marital status, veteran status, and income. Additionally, we are going to identify the top 10 causes of death in CA, and investigate the similarity and discrepancy of the cause of death between CA and the U.S. across states.
+For this analysis, we are going to use death data from the State of California (CA) to predict life expectancy by sex, race/ethnicity, country of birth, education, marital status, veteran status, and income. Additionally, we are going to identify the top 10 causes of death in CA, and investigate the similarity and discrepancy of the cause of death between CA and the U.S. across states.
+
 ## Data Source: 
 
-The data used in the analysis reflect information collected and transformed by Viral Records Business Intelligence System (VRBIS) for the State of California in year 2014 – 2020. The death data derived from information entered on death certificates which is refreshed monthly [2]. The data source also includes the cause of death. 
+The data used in the analysis reflects information collected and transformed by Viral Records Business Intelligence System (VRBIS) for the State of California in the years 2014–2020. This death data is derived from information entered on death certificates for California residents [2]. The data source also includes the cause of death. 
 
-The income level data in this analysis derived from United States Census Bureau American Community Survey (ACS) Data for the State of California by county [3]. The ACS does not produce income level information for mortality records specifically, therefore, ACS only contains the median income level data for overall population. Pooling 2014 – 2020 years of data as an additional factor that might provide estimate affect to life expectancy. 
+The income data in this analysis is derived from the United States Census Bureau American Community Survey (ACS) Data for the State of California by county [3]. The ACS does not produce income level information specifically for mortality records, but does contain median income levels for the overall population. Pooling this information with the data from 2014–2020 might provide additional context to estimate life expectancy. 
 
-The death data with underling cause of death across the states for all U.S. counties derived from Centers for Disease Control and Prevention. Data are based on death corticates for U.S. residents [4]. 
+The death data with underlying causes of death across the states for all U.S. counties is derived from the Centers for Disease Control and Prevention. Data are based on death certificates for U.S. residents [4]. 
 
 ## Methodology:
 
-There will be several stages to achieve the goal of predicting the life expectancy in CA. 
+There will be several stages to achieve the goal of predicting life expectancy in California. 
 
-First, use the Viral Records data from CA to estimate the mortality rate for each age group by county in year 2014 - 2020 respectively. Estimate the overall mortality rate in CA, and with the collaboration of the U.S. census data, compare to the mortality rate across the U.S in year 2014 – 2020 respectively. 
+First, we will use the Viral Records data from CA to estimate the mortality rate for each age group by county in years 2014-2020 respectively. We would then estimate the overall mortality rate in CA, and with the collaboration of the U.S. census data, compare this to the mortality rate across the U.S in the years 2014–2020 respectively. 
 
-Second, analyze the relationship between each main factor (sex, race/ethnicity, country of birth, education, marital status, veteran status, and income) and mortality rate of each age group in year 2014 – 2020. Predict the trend of mortality rate across the years in CA, and by county. Use statistical modelling that including all the possible factors to predict the life expectancy in CA. Explain the limitation and challenge posed by the data and the possibility of analyses bias. 
+Second, we will analyze the relationship between several demographic factors (sex, race/ethnicity, country of birth, education, marital status, veteran status, and income) and the mortality rate of each age group in the years 2014–2020. With this data, we can predict the trend of mortality rates across the years in CA, and by county. Additioanlly, we would use statistical modelling that includes all the possible factors to predict the life expectancy in CA. There will also be limitations and challenges posed by the data with the possibility of bias, which will be referenced in the final report.
 
-Last, find the leading cause of death (top 10) for each age group in CA and by county. Compare to the leading cause of death estimated by CDC [5]. For 2020, further analyze COVID on the affection of the mortality rate compare to other years in CA. 
+Lastly, we will aim to find the leading cause of death (top 10) for each age group in CA, and by county. This information can be compared to the leading cause of death estimated by the CDC [5]. For 2020, this question can be further analyzed to understand the effect of COVID on the mortality rate compared to other years in CA. 
 
 ## Machine Learning Model:
 
