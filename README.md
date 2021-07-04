@@ -46,4 +46,4 @@ Based on further analysis, decision trees and random forest models might also be
 5.	Centers for Disease Control and Prevention, National Center for Health Statistics, Leading Cause of Death, NVSS - Leading Causes of Death (cdc.gov). https://www.cdc.gov/nchs/nvss/leading-causes-of-death.htm
 
 ## Communication Protocols
-For this segment, our group has been communicating through a private slack channel. We have also met over zoom on Wednesday, prior to Thursday's class and Sunday morning. 
+Our group has been communicating through a private slack channel. We have also met over zoom on Wednesday, prior to Thursday's class and Sunday morning. 
