@@ -26,13 +26,13 @@ Lastly, we will aim to find the leading cause of death (top 10) for each age gro
 
 ## Machine Learning Model:
 
-For the initial analysis we are going to use Multiple Linear Regression Model to predict the linear relationship between the dependent variable (age) and the independent variables (sex, race/ethnicity, country of birth, education, marital status, veteran status, and income). 
+For the initial analysis, we are going to use a Multiple Linear Regression Model to predict the linear relationship between the dependent variable (age of death) and the  independent variables (sex, race/ethnicity, country of birth, education, marital status, veteran status, and income). This is the best model for us to use because it models a linear relationship between a dependent variable and several independent factors. 
 
-The linear regression analysis will help us to better understand the affect of the dependent variable to the independent variable, and it will also help us to predicts the trends and future values. 
+The linear regression analysis will help us to better understand the effect of the dependent variable on the independent variable, and which independent variables have the strongest impact on life expectancy. This model will also help us to predict trends and future values.
 
-For this analysis, we are trying the find out whether each factor will have an affect on the age of death, in order to better predict the age when the value of dependent variables change. 
+For this analysis, we are trying the determine whether each factor will have an effect on the age of death in order to better predict the age when the value of dependent variables change. 
 
-Based on further analysis, decision trees and random forests might also be needed to create a better model in predicting life expectancy. 
+Based on further analysis, decision trees and random forest models might also be needed to create a better model in predicting life expectancy. 
 
 
 ## Reference
