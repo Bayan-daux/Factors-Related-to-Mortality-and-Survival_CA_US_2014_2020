@@ -1,5 +1,7 @@
 # Life Expectancy in California, 2014 - 2020
 
+*Group members: Bayan Bahloul, Caelan Doherty, Mouad Lachhab, Ryan Lerner & Miaomiao Shen*
+
 ## Overview 
 
 Life expectancy has many different definitions based on the target analysis population. Life expectancy is generally intended to estimate the average number of years that a person might expect to live [1]. There are many factors that affect the estimated age for the target population such as gender, lifestyle, living condition, education level, etc. Nowadays, most of us are facing a variety of pressures. Due to environmental impacts coupled with climate change, the average life expectancy becomes more complicated and harder to predict.
