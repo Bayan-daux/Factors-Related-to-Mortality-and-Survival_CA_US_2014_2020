@@ -45,3 +45,5 @@ Based on further analysis, decision trees and random forest models might also be
 4.	Centers for Disease Control and Prevention, CDC WONDER, Underlying Cause of Death, 1999 – 2019, Underlying Cause of Death,1999-2019 Request (cdc.gov) https://wonder.cdc.gov/controller/datarequest/D76;jsessionid=966B85BC1ED23DE79066DD928653
 5.	Centers for Disease Control and Prevention, National Center for Health Statistics, Leading Cause of Death, NVSS - Leading Causes of Death (cdc.gov). https://www.cdc.gov/nchs/nvss/leading-causes-of-death.htm
 
+## Communication Protocols
+For this segment, our group has been communicating through a private slack channel. We have also met over zoom on Wednesday, prior to Thursday's class and Sunday morning. 
