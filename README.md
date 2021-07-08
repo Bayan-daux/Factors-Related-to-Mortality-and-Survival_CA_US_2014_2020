@@ -1,4 +1,4 @@
-# Life Expectancy in California, 2014 - 2020
+# Lifestyle Factors Related to Mortality and Survival, 2014 - 2020
 
 *Group members: Bayan Bahloul, Caelan Doherty, Mouad Lachhab, Ryan Lerner & Miaomiao Shen*
 
