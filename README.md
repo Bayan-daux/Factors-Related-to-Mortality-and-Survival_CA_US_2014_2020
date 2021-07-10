@@ -4,9 +4,7 @@
 
 ## Overview 
 
-Life expectancy has many different definitions based on the target analysis population. Life expectancy is generally intended to estimate the average number of years that a person might expect to live [1]. There are many factors that affect the estimated age for the target population such as gender, lifestyle, living condition, education level, etc. Nowadays, most of us are facing a variety of pressures. Due to environmental impacts coupled with climate change, the average life expectancy becomes more complicated and harder to predict.
-
-For this analysis, we are going to use death data from the State of California (CA) to predict life expectancy by sex, race/ethnicity, country of birth, education, marital status, veteran status, and income. Additionally, we are going to identify the top 10 causes of death in CA, and investigate the similarity and discrepancy of the cause of death between CA and the U.S. across states.
+Age of death is almost impossible to predict for a variety of reasons. Death can happen in an instant, but it also commonly comes naturally through old age. However, when someone dies of old age, they don't all die at the same exact age. There are many factors that can influence a person's age of death or their life expectancy. Life expectancy is generally intended to estimate the average number of years that a person might expect to live [1]. For this analysis, we are going to explore whether there is a relationship between various factors such as sex, ethnicity, country of birth, education level, marital status and veteran status. This analysis will specifically focus on the state of California, given that this state is both heavily populated and diverse. Focusing on just one state can also help to control for less tangible factors such as happiness, technology levels and environmental conditions.  
 
 ## Data Source: 
 
