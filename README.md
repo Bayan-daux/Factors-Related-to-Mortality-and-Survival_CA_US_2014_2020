@@ -8,11 +8,31 @@ Age of death is almost impossible to predict for a variety of reasons. Death can
 
 ## Data Source: 
 
-The data used in the analysis reflects information collected and transformed by Viral Records Business Intelligence System (VRBIS) for the State of California in the years 2014–2020. This death data is derived from information entered on death certificates for California residents [2]. The data source also includes the cause of death. 
+The data used in the analysis reflects information collected and transformed by Viral Records Business Intelligence System (VRBIS) for the State of California in the years 2014–2020. This death data is derived from information entered on death certificates for California residents [2]. 
 
 The income data in this analysis is derived from the United States Census Bureau American Community Survey (ACS) Data for the State of California by county [3]. The ACS does not produce income level information specifically for mortality records, but does contain median income levels for the overall population. Pooling this information with the data from 2014–2020 might provide additional context to estimate life expectancy. 
 
 The death data with underlying causes of death across the states for all U.S. counties is derived from the Centers for Disease Control and Prevention. Data are based on death certificates for U.S. residents [4]. 
+
+## ETL Process
+
+We used python’s Pandas to load the downloaded data. After closely looking at the columns, we decided the drop the columns, ‘Type_of_Event’, ‘Residence_or_Place_of_Death’ 
+‘Last_Data_Refresh’, because they don’t bring any valuable information to this analysis.
+ 
+The dataset had all values under 11 as ‘<11’, which is a problem if we want to perform some arithmetic or comparative operation on the data. Therefore, we needed to parse this value on an “int”. Our solution in this case was to average the value to 6 in order to ensure that the death totals were all numerical/graphable. We chose this default value because there are many instances in the table where the death count equals zero. Because 0 did exist in some rows, we could understand '<11' to be greater than 0 and less than 11. Therefore, 6 seemed like an appropriate compromise to place between these two values. 
+ 
+For The ethnicity data, the dataframe had race_ethnicity have “Non-Hispanic” attached to every Non-Hispanic ethnicity. To simplify the data, we used regex drop the “Non-Hispanic” label attached to all non Hispanic ethnicities. 
+ 
+For each table, we renamed the death record column to not confuse the numbers when we will use more than one criteria in a dashboard.
+ 
+We also created a table that keeps the total number of deaths, not aggregated by any characteristic. 
+ 
+We created a table that keeps the total number of populations during the same years and how that population breakdown by county, after downloading the data we dropped the years that were outside of scope of this analysis. 
+ 
+We made a table that shows the counties list and each county’s correspondent surface, and merged it with a table that shows if that county is considered to be a rural, urban or suburban county.
+ 
+After the cleaning process, the dataframes were exported into a csv file that would be later used to populate our SQL database.
+
 
 ## Methodology:
 
