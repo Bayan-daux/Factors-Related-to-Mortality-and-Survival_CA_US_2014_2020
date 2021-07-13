@@ -66,4 +66,11 @@ After the cleaning process, the dataframes were exported into a csv file that wo
 5.	Centers for Disease Control and Prevention, National Center for Health Statistics, Leading Cause of Death, NVSS - Leading Causes of Death (cdc.gov). https://www.cdc.gov/nchs/nvss/leading-causes-of-death.htm
 
 ## Communication Protocols
-Our group has been communicating through a private slack channel. We have also met over zoom on Wednesday, prior to Thursday's class and Sunday morning. 
+
+The following collaborative tools are used to facilitate communication and sharing among team members:
+
+•	Slack For streamline communication, using a private Slack channel as the main communication platform. Beside using it for real-time communication between members, its also to share links for resources, schedule meetings, and general announcements. 
+•	Zoom For virtual meetings and to share video and screen content between members. It serves as main platform for team to brain, make mutual decisions, give updates on ongoing tasks, and discuss future ones.
+•	Google Documents for team members to take notes, edit, and comment in real time. Also, to keeps record of meetings, assign tasks and track project milestones and deadlines. 
+•	GitHub for data repositories that also provide version control, multiple branches, and ability to merge and update. Also serve as the project archives as it allows for all team members permanent access to the project and its resources.
+
