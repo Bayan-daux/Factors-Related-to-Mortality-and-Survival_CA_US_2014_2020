@@ -45,12 +45,11 @@ Second, we will analyze the relationship between several demographic factors (se
 
 ## Machine Learning Model:
 
-For the initial analysis, we are going to use a Multiple Linear Regression Model to predict the linear relationship between the dependent variable (age of death) and the  independent variables (sex, race/ethnicity, country of birth, education, marital status, veteran status, and income). This is the best model for us to use because it models a linear relationship between a dependent variable and several independent factors. 
+after having seen the trends in our dataset, we have decided that for our ML model, the focus at first would be on using correlation matrices to further quantify the relationship between our variables to then build a predictive model that would have as a goal to predict the age of death -life expectancy- for a person given certain options to choose from
 
-The linear regression analysis will help us to better understand the effect of the dependent variable on the independent variable, and which independent variables have the strongest impact on life expectancy. This model will also help us to predict trends and future values.
-
-For this analysis, we are trying the determine whether each factor will have an effect on the age of death in order to better predict the age when the value of dependent variables change. 
-Based on further analysis, decision trees and random forest models might also be needed to create a better model in predicting life expectancy. 
+Data preparation:
+First We put the data in a format that the ML would be able to use,
+We combined all our death related tables in one big table, where each row represents the number of deaths during that year for the same county and age group, broken down by the different .....
 
 ## **Project Limitation**
 
