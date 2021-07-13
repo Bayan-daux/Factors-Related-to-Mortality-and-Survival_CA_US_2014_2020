@@ -32,6 +32,10 @@ We created a table that keeps the total number of populations during the same ye
 We made a table that shows the counties list and each county’s correspondent surface, and merged it with a table that shows if that county is considered to be a rural, urban or suburban county.
 After the cleaning process, the dataframes were exported into a csv file that would be later used to populate our SQL database.
 
+## Database 
+
+### ERD Model
+![sql/ERD])(sql/ERD.png)
 
 ## Methodology:
 
@@ -40,8 +44,6 @@ There will be several stages to achieve the goal of predicting life expectancy i
 First, we will use the Viral Records data from CA to estimate the mortality rate for each age group by county in years 2014-2020 respectively. We would then estimate the overall mortality rate in CA, and with the collaboration of the U.S. census data, compare this to the mortality rate across the U.S in the years 2014–2020 respectively. 
 
 Second, we will analyze the relationship between several demographic factors (sex, race/ethnicity, country of birth, education, marital status, veteran status, and income) and the mortality rate of each age group in the years 2014–2020. With this data, we can predict the trend of mortality rates across the years in CA, and by county. Additioanlly, we would use statistical modelling that includes all the possible factors to predict the life expectancy in CA. There will also be limitations and challenges posed by the data with the possibility of bias, which will be referenced in the final report.
-
-Lastly, we will aim to find the leading cause of death (top 10) for each age group in CA, and by county. This information can be compared to the leading cause of death estimated by the CDC [6]. For 2020, this question can be further analyzed to understand the effect of COVID on the mortality rate compared to other years in CA.
 
 ## Machine Learning Model:
 
