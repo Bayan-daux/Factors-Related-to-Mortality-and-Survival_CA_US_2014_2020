@@ -40,7 +40,7 @@ After the cleaning process, the dataframes were exported into a csv file that wo
 ![sql/ERD](sql/ERD.png)
 
 ### SQL Database
-![sql/Screen Shot 2021-07-12 at 5.41.48 PM](sql/Screen Shot 2021-07-12 at 5.41.48 PM.png)
+![sql/"Screen Shot 2021-07-12 at 5.41.48 PM"](sql/"Screen Shot 2021-07-12 at 5.41.48 PM.png")
 
 ## Methodology:
 
