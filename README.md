@@ -39,6 +39,9 @@ After the cleaning process, the dataframes were exported into a csv file that wo
 ### ERD Model
 ![sql/ERD](sql/ERD.png)
 
+### SQL Database
+![sql/Screen Shot 2021-07-12 at 5.41.48 PM](sql/Screen Shot 2021-07-12 at 5.41.48 PM.png)
+
 ## Methodology:
 
 First, we will use the Viral Records data from CA to estimate the mortality rate for each age group by county in years 2014-2020 respectively. We would then estimate the overall mortality rate in CA, and with the collaboration of the U.S. census data, compare this to the mortality rate across the U.S in the years 2014–2020 respectively. 
