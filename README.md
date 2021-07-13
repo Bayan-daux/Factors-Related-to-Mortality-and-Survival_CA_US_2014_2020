@@ -4,7 +4,12 @@
 
 ## Overview 
 
-Age of death is almost impossible to predict for a variety of reasons. Death can happen in an instant, but it also commonly comes naturally through old age. However, when someone dies of old age, they don't all die at the same exact age. There are many factors that can influence a person's age of death or their life expectancy. Life expectancy is generally intended to estimate the average number of years that a person might expect to live [1]. For this analysis, we are going to explore whether there is a relationship between various factors such as sex, ethnicity, country of birth, education level, marital status and veteran status. This analysis will specifically focus on the state of California, given that this state is both heavily populated and diverse. Focusing on just one state can also help to control for less tangible factors such as happiness, technology levels and environmental conditions.  
+## **Overview**
+
+In the last few decades, U.S. mortality rates kept going lower and as a result life expectancy at birth reached record high, 78.8 years in 2019 compared to 69.7 years in 1960 [1]. However, compared to other nations the US had the 20th highest life expectancy in the world in 1960 and 46th in 2019, which is projected to drop to 43rd by 2060 [1]. In addition to that, among developed nations, the 35 OECD countries, U.S. life expectancy at birth ranks at 28 [2].
+
+A lot of the available analyses regarding the reduction in mortality rates (increase of life expectancy) focus primarily on medical innovations and advances in health care. However, there are many other factors that impact mortality that are not studied as closely. Either due to the complexity of measuring the factors or difficulty to find the proper data, to name few obstacles. Factors such as the level of education, gender, ethnicity, marital status, place of birth (immigration), being a military retiree (veteran), and urban sprawl have impact in life expectancy. Therefore, this project aims to investigate the associations of these broad range of factors to mortality and survival in the population of the U.S, focusing on California population as the case study. The project hopes to shade light on these factors to make the case for policy makers, that beside medical factors, there are other ones that needs to beidentified, addressed, or at least evaluated and taking into consideration to improve the nation&#39;s overall health and reduce health disparities.To add to the research on longevity and help find new strategies to ensure a longer and healthier life for future generations in the US and world. The state of California was chosen, given that this state is both heavily populated, diverse, and most importantly have proper datasets available to work with.
+
 
 ## Data Source: 
 
@@ -54,23 +59,26 @@ After the cleaning process, the dataframes were exported into a csv file that wo
 
 *Based on further analysis, decision trees and random forest models might also be needed to create a better model in predicting life expectancy. 
 
+## **Project Limitation**
 
-
+1. Looking at the **combined impacts** of different factors would provide a broader insight, however, due to the form of available data we were only able to look at each factor individually.
+2. **Availability of the data** , it was hard to find datasets for other factors that would be interesting to include in this project, such as income and lifestyle behavior.
+3. **Across states**  **comparison** , not all states have the datasets in a unified form that would make it possible to combined or merge them into one to reach the form we need to have it analyzed. Therefore, we limited our project to CA state data and missed the opportunity to compare results across different states.
 
 ## Reference
 
-1.	Arias E. United States life tables, 2008. National Vital Statistics Reports; vol 61 no 3. Hyattsville, MD: National Center for     Health Statistics. 2012. Available from: https://www.cdc.gov/nchs/data/nvsr/nvsr61/nvsr61_03.pdf.
-2.	California Department of Public Health Vital Records Data and Statistics, VSB Data and Statistics (ca.gov) https://www.cdph.ca.gov/Programs/CHSI/Pages/California-Vital-Data.aspx
-3.	United States Census Bureau, American Community Survey Data, American Community Survey Data (census.gov)        https://www.census.gov/programs-surveys/acs/data.html
-4.	Centers for Disease Control and Prevention, CDC WONDER, Underlying Cause of Death, 1999 – 2019, Underlying Cause of Death,1999-2019 Request (cdc.gov) https://wonder.cdc.gov/controller/datarequest/D76;jsessionid=966B85BC1ED23DE79066DD928653
-5.	Centers for Disease Control and Prevention, National Center for Health Statistics, Leading Cause of Death, NVSS - Leading Causes of Death (cdc.gov). https://www.cdc.gov/nchs/nvss/leading-causes-of-death.htm
+1.	Living Longer: Historical and Projected Life Expectancy in the United States, 1960 to 2060 [https://www.census.gov/content/dam/Census/library/publications/2020/demo/p25-1145.pdf](https://www.census.gov/content/dam/Census/library/publications/2020/demo/p25-1145.pdf) (Accessed: 7/10/2021)
+2. 	International Comparison  [https://www.americashealthrankings.org/learn/reports/2019-annual-report/international-comparison](https://www.americashealthrankings.org/learn/reports/2019-annual-report/international-comparison)(Accessed: 7/10/2021)  
+3.	California Department of Public Health Vital Records Data and Statistics, VSB Data and Statistics (ca.gov) https://www.cdph.ca.gov/Programs/CHSI/Pages/California-Vital-Data.aspx
+4.	United States Census Bureau, American Community Survey Data, American Community Survey Data (census.gov)        https://www.census.gov/programs-surveys/acs/data.html
+5.	Centers for Disease Control and Prevention, CDC WONDER, Underlying Cause of Death, 1999 – 2019, Underlying Cause of Death,1999-2019 Request (cdc.gov) https://wonder.cdc.gov/controller/datarequest/D76;jsessionid=966B85BC1ED23DE79066DD928653
+6.	Centers for Disease Control and Prevention, National Center for Health Statistics, Leading Cause of Death, NVSS - Leading Causes of Death (cdc.gov). https://www.cdc.gov/nchs/nvss/leading-causes-of-death.htm
 
 ## Communication Protocols
 
 The following collaborative tools are used to facilitate communication and sharing among team members:
 
-•	**Slack** For streamline communication, using a private Slack channel as the main communication platform. Beside using it for real-time communication between members, its also to share links for resources, schedule meetings, and general announcements. 
-•	**Zoom** For virtual meetings and to share video and screen content between members. It serves as main platform for team to brain, make mutual decisions, give updates on ongoing tasks, and discuss future ones.
-•	**Google Documents** for team members to take notes, edit, and comment in real time. Also, to keeps record of meetings, assign tasks and track project milestones and deadlines.
-•	**GitHub** for data repositories that also provide version control, multiple branches, and ability to merge and update. Also serve as the project archives as it allows for all team members permanent access to the project and its resources.
-
+- **Slack** For streamline communication, using a private Slack channel as the main communication platform. Beside using it for real-time communication between members, it&#39;s also to share links for resources, schedule meetings, and general announcements.
+- **Zoom** For virtual meetings and to share video and screen content between members. It serves as main platform for team to brain, make mutual decisions, give updates on ongoing tasks, and discuss future ones.
+- **Google Documents** for team members to take notes, edit, and comment in real time. Also, to keeps record of meetings, assign tasks and track project milestones and deadlines.
+- **GitHub** for data repositories that also provide version control, multiple branches, and ability to merge and update. Also serve as the project archives as it allows for all team members permanent access to the project and its resources.
