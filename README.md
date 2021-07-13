@@ -35,7 +35,7 @@ After the cleaning process, the dataframes were exported into a csv file that wo
 ## Database 
 
 ### ERD Model
-![sql/ERD])(sql/ERD.png)
+![sql/ERD](sql/ERD.png)
 
 ## Methodology:
 
