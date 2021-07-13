@@ -58,9 +58,10 @@ We combined all our death related tables in one big table, where each row repres
 
 ## **Project Limitation**
 
-1. Looking at the **combined impacts** of different factors would provide a broader insight, however, due to the form of available data we were only able to look at each factor individually.
-2. **Availability of the data** , it was hard to find datasets for other factors that would be interesting to include in this project, such as income and lifestyle behavior.
-3. **Across states**  **comparison** , not all states have the datasets in a unified form that would make it possible to combined or merge them into one to reach the form we need to have it analyzed. Therefore, we limited our project to CA state data and missed the opportunity to compare results across different states.
+1. Looking at the **combined impacts** of different factors would provide a broader insight, however, due to the form of available data, we were only able to look at each factor individually. The California public health data website gave us a query tool, but only allowed us to choose one factor grouped with age bins at a time.
+2. **Granularity**: We were unable to find granular data broken down by individual with an exact age of death, so our dataset would only include total death counts in 5-year age bins.
+3. **Availability of the data** , it was hard to find datasets for other factors that would be interesting to include in this project, such as income and lifestyle behavior.
+4. **Across states**  **comparison** , not all states have the datasets in a unified form that would make it possible to combined or merge them into one to reach the form we need to have it analyzed. Therefore, we limited our project to CA state data and missed the opportunity to compare results across different states.
 
 ## Reference
 
