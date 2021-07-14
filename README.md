@@ -9,7 +9,7 @@ In the last few decades, U.S. mortality rates have declined and as a result, lif
 Much of the available analyses regarding the reduction in mortality rates (increase of life expectancy) focuses primarily on medical innovations and advances in health care. However, there are many other factors that impact mortality that are not studied as closely. Demographci factors such as education level, gender, ethnicity, marital status, place of birth (immigration), veteran status, and urban sprawl could also have an impact on life expectancy. Therefore, this project aims to investigate the relationship of these broad range of factors to mortality and survival in the population of California. The project hopes to shade light on these factors to make the case for policy makers and average citizens to show that beside health-related factors, there may be demographic features that affect these differences in age of death. This study can prove valuable to add to the research on longevity and help find new strategies to ensure a longer and healthier life for future generations in the US and world. The state of California was chosen, given that this state is both heavily populated and diverse, while also containing adequate datasets available to work with.
 
 ## Dashboard
-https://public.tableau.com/app/profile/ryan.lerner/viz/California_County_Story1_16262166616270/Story1
+https://public.tableau.com/app/profile/caelan.doherty/viz/California_County_Story1/Story1
 
 ## Data Source: 
 
