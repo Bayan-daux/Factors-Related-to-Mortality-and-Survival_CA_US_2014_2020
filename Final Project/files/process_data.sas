@@ -17,11 +17,6 @@ ods html body="&root.\&pgm._&sysdate..html" style=HTMLBlue;
 
 libname lib "&root.";
 
-/*proc import file="&root.\Cal_county_geo.csv" 
-            out=Cal_county_geo dbms=csv replace; 
-            getnames=yes; 
-run; */
-
 data Cal_county_geo;
     infile "&root.\Cal_county_geo.csv"
 	delimiter = ","
@@ -41,10 +36,6 @@ data Cal_county_geo;
 run;
 
 %macro process(dt=,fl=,cntvar=,catvar=);
-/*proc import file="C:\Users\mshen\OneDrive - Mathematica\Desktop\Miaomiao Shen_Files\final_project\&dt..csv" 
-            out=&dt. dbms=csv replace; 
-            getnames=yes; 
-run;*/
 
 data &dt.;
     infile "&root.\&dt..csv"
@@ -345,7 +336,7 @@ ods html close;
 ods _all_ close;
 
 options device=ACTXIMG;
-ods csv file="C:\Users\mshen\OneDrive - Mathematica\Desktop\Miaomiao Shen_Files\final_project\Final_clean_table.csv" style=analysis
+ods csv file="...\Final_clean_table.csv" style=analysis
 options(AutoFilter='yes' embedded_titles='yes' frozen_headers="Yes" frozen_rowheaders="1");
 
 ods excel options(sheet_name="Final Table");
@@ -356,7 +347,7 @@ run;
 ods excel close;
 
 options device=ACTXIMG;
-ods csv file="C:\Users\mshen\OneDrive - Mathematica\Desktop\Miaomiao Shen_Files\final_project\Agg_Final_clean_table.csv" style=analysis
+ods csv file="...\Agg_Final_clean_table.csv" style=analysis
 options(AutoFilter='yes' embedded_titles='yes' frozen_headers="Yes" frozen_rowheaders="1");
 
 ods excel options(sheet_name="Final Table");
@@ -368,7 +359,7 @@ ods excel close;
 
 %macro exportdt(fl=);
 options device=ACTXIMG;
-ods csv file="C:\Users\mshen\OneDrive - Mathematica\Desktop\Miaomiao Shen_Files\final_project\&fl._add_geo1.csv" style=analysis
+ods csv file="...\&fl._add_geo1.csv" style=analysis
 options(AutoFilter='yes' embedded_titles='yes' frozen_headers="Yes" frozen_rowheaders="1");
 
 ods excel options(sheet_name="&fl.");
