@@ -50,11 +50,11 @@ Second, we will analyze the relationship between several demographic factors (se
 
 ## Machine Learning Model:
 
-After seeing the trends in our dataset, we have decided that the initial focus for our ML model would be using correlation matrices to further quantify the relationship between our variables. This method would be used to then build a predictive model that would aim to estimate the age of death -life expectancy- for a person given certain factors to choose from. 
-
+After seeing the trends in our dataset, we have decided that the initial focus for our ML model would be using correlation matrices to further quantify the relationship between our variables. we used data grouped by age to see how each criterion maps to the age category on a heat map, then we created a correlation matrix to see how all the other factors relate to each other.
 Data preparation:
-First, we put the data in a format that the ML model would be able to use,
-We combined all our death related tables in one big table, where each row represents the number of deaths during that year for the same county and age group, broken down by the different .....
+
+After transforming the data we tried first a linear svc model and then a trees model but unfortunately neither of them was successful
+
 
 ## **Project Limitation**
 
