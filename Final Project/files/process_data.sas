@@ -1,6 +1,6 @@
 options mprint mlogic nocenter;
 
-%let root=C:\Users\mshen\OneDrive - Mathematica\Desktop\Miaomiao Shen_Files\final_project;
+%let root=...;
 %let pgm=process_data;
 
 /*
@@ -389,7 +389,4 @@ ods excel close;
 proc printto;
 run;
 
-data race_ethnicity_add_geo;
-   set race_ethnicity_add_geo;
-run;
 
