@@ -56,7 +56,7 @@ Second, we will analyze the relationship between several demographic factors (se
 After seeing the trends in our dataset, we have decided that the initial focus for our ML model would be using correlation matrices to further quantify the relationship between our variables. we used data grouped by age to see how each criterion maps to the age category on a heat map, then we created a correlation matrix to see how all the other factors relate to each other.
 Data preparation:
 
-After transforming the data we tried first a linear svc model and then a trees model but unfortunately neither of them was successful
+After transforming the data we tried first a linear svc model and then a trees model but unfortunately neither of them were successful.
 
 
 ## **Project Limitation**
@@ -65,6 +65,7 @@ After transforming the data we tried first a linear svc model and then a trees m
 2. **Granularity**: We were unable to find granular data broken down by individual with an exact age of death, so our dataset would only include total death counts in 5-year age bins.
 3. **Availability of the data** , it was hard to find datasets for other factors that would be interesting to include in this project, such as income and lifestyle behavior.
 4. **Across states**  **comparison** , not all states have the datasets in a unified form that would make it possible to combined or merge them into one to reach the form we need to have it analyzed. Therefore, we limited our project to CA state data and missed the opportunity to compare results across different states.
+5. **Explainability**, while there may be differences in the age of death distributions, it's likely that there are other reasons why the age of deaths differ. For example, widows dying at an older age could likely be due to the fact that most widows survive their spouse who dies first. 
 
 ## Reference
 
