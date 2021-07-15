@@ -31,7 +31,7 @@ data Cal_county_geo;
 	format Description $20.;
 
 	input
-    County $
+        County $
 	Description $;
 run;
 
@@ -58,7 +58,7 @@ data &dt.;
 
 	input
 	Year_of_Death 
-    County_of_Residence $
+        County_of_Residence $
 	Age $
 	&catvar. $
 	&cntvar.;
