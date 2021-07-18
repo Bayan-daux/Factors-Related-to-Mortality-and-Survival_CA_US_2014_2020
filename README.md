@@ -40,9 +40,13 @@ After the cleaning process, the dataframes were exported into a csv file that wo
 ## Database 
 
 ### ERD Model
+As shown below, our ERD model was mainly linked through the primary key for the county names. Each dataset contained county names, and most others also contained variables for the year of death and age. Each table represented a different factor that we are analyzing, and each factor included data by year, county, and age group.
+
 ![sql/ERD](sql/ERD.png)
 
 ### SQL Database
+Our database was created in postreSQL with 9 tables separate tables linked by the corresponding county in California. 6 of these tables were from datasets gathered on the California Dept of Public Health website that yielded a year of death, county, age group, and a demographic factor with the total numbers of deaths in each age group. This image below displays a function query in PostgreSQL where we retrieve all 'White' death data from our ethnicity table in the year 2014.
+
 ![sql/sql_query](sql/sql_query.png)
 
 ## Methodology:
