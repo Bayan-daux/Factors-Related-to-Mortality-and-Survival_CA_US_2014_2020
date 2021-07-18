@@ -45,7 +45,7 @@ As shown below, our ERD model was mainly linked through the primary key for the 
 ![sql/ERD](sql/ERD.png)
 
 ### SQL Database
-Our database was created in postreSQL with 9 tables separate tables linked by the corresponding county in California. 6 of these tables were from datasets gathered on the California Dept of Public Health website that yielded a year of death, county, age group, and a demographic factor with the total numbers of deaths in each age group. This image below displays a function query in PostgreSQL where we retrieve all 'White' death data from our ethnicity table in the year 2014.
+Our database was created in postreSQL with 9 tables separate tables linked by the corresponding county in California. 6 of these tables were from datasets gathered on the California Dept of Public Health website that yielded a year of death, county, age group, and a demographic factor with the total numbers of deaths in each age group. This image below displays a functioning query in PostgreSQL where we retrieve all 'White' death data from our ethnicity table in the year 2014.
 
 ![sql/sql_query](sql/sql_query.png)
 
