@@ -59,11 +59,11 @@ Second, we will analyze the relationship between several demographic factors (se
 
 After seeing the trends in our dataset, we have decided that the initial focus for our ML model would be using correlation matrices to further quantify the relationship between our variables. we used data grouped by age to see how each criterion maps to the age category on a heat map, then we created a correlation matrix to see how all the other factors relate to each other.
 
-![ETL - ML/heatmap for correlation matrix](ETL - ML/heatmap for correlation matrix.png)
+![Factors Correlation Matrix Heatmap](./ETL - ML/heatmap for correlation matrix.png)
 
 After transforming the data we tried first a linear svc model and then a trees model but unfortunately neither of them were successful.
 
-![ETL - ML/ml01](ETL - ML/ml01.PNG)
+![ML Models Test](ETL - ./ML/ml01.PNG)
 
 ## **Project Limitation**
 
