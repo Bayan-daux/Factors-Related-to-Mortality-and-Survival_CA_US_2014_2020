@@ -63,7 +63,7 @@ After seeing the trends in our dataset, we have decided that the initial focus f
 
 After transforming the data we tried first a linear svc model and then a trees model but unfortunately neither of them were successful.
 
-![ML Models Test](ETL - ./ML/ml01.PNG)
+![ML Models Test](https://github.com/Bayan-daux/Factors-Related-to-Mortality-and-Survival_CA_US_2014_2020/blob/main/ETL%20-%20ML/ml01.PNG)
 
 ## **Project Limitation**
 
