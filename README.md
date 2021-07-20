@@ -49,6 +49,9 @@ Our database was created in postreSQL with 9 tables separate tables linked by th
 
 ![sql/sql_query](sql/sql_query.png)
 
+### Data Dictionary
+
+
 ## Methodology:
 
 First, we will use the Viral Records data from CA to estimate the mortality rate for each age group by county in years 2014-2020 respectively. We would then estimate the overall mortality rate in CA, and with the collaboration of the U.S. census data, compare this to the mortality rate across the U.S in the years 2014–2020 respectively. 
