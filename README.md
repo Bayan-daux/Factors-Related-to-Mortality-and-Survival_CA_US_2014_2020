@@ -51,6 +51,8 @@ Our database was created in postreSQL with 9 tables separate tables linked by th
 
 ### Data Dictionary
 
+![Data Dictionary](https://github.com/Bayan-daux/Factors-Related-to-Mortality-and-Survival_CA_US_2014_2020/blob/main/Resources/Data_Dictionary.PNG)
+
 
 ## Methodology:
 
