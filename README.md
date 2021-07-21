@@ -70,6 +70,8 @@ After transforming the data we tried first a linear svc model and then a trees m
 
 ![ML Models Test](https://github.com/Bayan-daux/Factors-Related-to-Mortality-and-Survival_CA_US_2014_2020/blob/main/ETL%20-%20ML/ml01.PNG)
 
+We have also attempted a random forest model because this model utilizes ensemble learning by combining multiple decision trees, which should result in a more accurate prediction.
+
 ## **Project Limitation**
 
 1. Looking at the **combined impacts** of different factors would provide a broader insight, however, due to the form of available data, we were only able to look at each factor individually. The California public health data website gave us a query tool, but only allowed us to choose one factor grouped with age bins at a time.
