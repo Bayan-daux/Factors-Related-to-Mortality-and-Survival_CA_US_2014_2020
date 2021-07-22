@@ -144,16 +144,36 @@ in short Random forests are a way of averaging multiple deep decision trees, tra
 
 here is how random forest performed:
 
-![picture](images/tree1.png)
+![picture](images/rf1.png)
  
- - we created a feature importance table for all the features for the Tree classifier
- ![picture](images/tree2.png)
+ - we created a feature importance table for all the features for the random forest classifier
+ ![picture](images/rf2.png)
  
  - we plotted the feature importance:
-  ![picture](images/tree3.png)
+  ![picture](images/rf3.png)
   
- - Tree confusion matrix:
-![picture](images/tree4.png)
+ - Random Forest confusion matrix:
+![picture](images/rf4.png)
+
+
+#### Adaboost
+
+AdaBoost is a type of algorithm that uses an ensemble learning approach to weight various inputs.
+
+here is how adaboost performed:
+
+![picture](images/ada1.png)
+ 
+ - we created a feature importance table for all the features for the adaboost classifier
+ ![picture](images/ada2.png)
+ 
+ - we plotted the feature importance:
+  ![picture](images/ada3.png)
+  
+ - adaboost confusion matrix:
+![picture](images/ada4.png)
+
+
 
 ## **Project Limitation**
 
