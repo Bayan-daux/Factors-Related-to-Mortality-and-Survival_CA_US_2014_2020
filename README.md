@@ -26,18 +26,32 @@ The death data with underlying causes of death across the states for all U.S. co
 
 ## ETL Process
 
-We used python’s Pandas to load the downloaded data. After closely looking at the columns, we decided the drop the columns, ‘Type_of_Event’, ‘Residence_or_Place_of_Death’ 
-‘Last_Data_Refresh’, because they don’t bring any valuable information to this analysis.
+- We used python’s Pandas to load the downloaded data. After closely looking at the columns, we decided the drop the columns, ‘Type_of_Event’, ‘Residence_or_Place_of_Death’ and ‘Last_Data_Refresh’ because they don’t bring any valuable information to this analysis.
  
-The dataset had all values under 11 as ‘<11’, which is a problem if we want to perform some arithmetic or comparative operation on the data. Therefore, we needed to parse this value on an “int”. Our solution in this case was to average the value to 6 in order to ensure that the death totals were all numerical/graphable. We chose this default value because there are many instances in the table where the death count equals zero. Because 0 did exist in some rows, we could understand '<11' to be greater than 0 and less than 11. Therefore, 6 seemed like an appropriate compromise to place between these two values. 
+- The dataset had all values under 11 as ‘<11’, which is a problem if we want to perform some arithmetic or comparative operation on the data. Therefore, we needed to parse this value on an “int”. Our solution in this case was to average the value to 6 in order to ensure that the death totals were all numerical/graphable. We chose this default value because there are many instances in the table where the death count equals zero. Because 0 did exist in some rows, we could understand '<11' to be greater than 0 and less than 11. Therefore, 6 seemed like an appropriate compromise to place between these two values. 
  
-For The ethnicity data, the dataframe had race_ethnicity have “Non-Hispanic” attached to every Non-Hispanic ethnicity. To simplify the data, we used regex drop the “Non-Hispanic” label attached to all non Hispanic ethnicities. 
+- For The ethnicity data, the dataframe had race_ethnicity have “Non-Hispanic” attached to every Non-Hispanic ethnicity. To simplify the data, we used regex drop the “Non-Hispanic” label attached to all non Hispanic ethnicities. 
  
-For each table, we renamed the death record column to not confuse the numbers when we will use more than one criteria in a dashboard.
+- For each table, we renamed the death record column to not confuse the numbers when we will use more than one criteria in a dashboard.
 We also created a table that keeps the total number of deaths, not aggregated by any characteristic. 
-We created a table that keeps the total number of populations during the same years and how that population breakdown by county, after downloading the data we dropped the years that were outside of scope of this analysis. 
-We made a table that shows the counties list and each county’s correspondent surface, and merged it with a table that shows if that county is considered to be a rural, urban or suburban county.
-After the cleaning process, the dataframes were exported into a csv file that would be later used to populate our SQL database.
+
+- We created a table that keeps the total number of populations during the same years and how that population breakdown by county, after downloading the data we dropped the years that were outside of scope of this analysis.
+
+- We made a table that shows the counties list and each county’s correspondent surface, and merged it with a table that shows if that county is considered to be a rural, urban or suburban county.
+
+- After the cleaning process, the dataframes were exported into  csv files that would be later used to populate our SQL database, and used in the dashboard analysis part of the project. the SQL script can be found in the SQL folder.
+
+- the databases were combined finally into one dataframe using the age categorie and county. to be used in the machine learning process the code for that can be found in the 'DEV' folder.
+
+- the description column was encoded into 3 numerical variables 
+- the target feature which is going to be the age category was a string, so we created a numerical categorical column based on it.
+- we dropped the age column and the other non numerical columns that arent meaninful to this analysis
+- we dropped the unknwon categories as they were very heavily correlated 
+- we keep a reference data frame for the targer feature and drop it from the data frame
+- use the rest of data for training dependent features.
+- split the dataset into training and testing data 0.8 to 0.2.
+
+-we tried scalling and standardizing the features but it turned out that it made the models behave worst so we removed that step from the pipeline
 
 ## Database 
 
@@ -64,15 +78,82 @@ Second, we will analyze the relationship between several demographic factors (se
 
 ## Machine Learning Model:
 
-After seeing the trends in our dataset, we have decided that the initial focus for our ML model would be using correlation matrices to further quantify the relationship between our variables. we used data grouped by age to see how each criterion maps to the age category on a heat map, then we created a correlation matrix to see how all the other factors relate to each other.
+### feature exploration 
+In the first part of our machine learning process we tried to focus on showing the average relation between each feature and the target variable, and how the other different factors relate to each other. 
+we used correlation matrices to do so, we also used Seaborn heatmaps to make the correlations clear to grasp visually : 
+
+- here are the correlation matrices: 
+
+* age categorie aggregated data heatmap:
+
+![picture](images/age_agg_heatmap.png)
+
+* Feature correlation matrix :
 
 ![Factors Correlation Matrix Heatmap](https://github.com/Bayan-daux/Factors-Related-to-Mortality-and-Survival_CA_US_2014_2020/blob/main/ETL%20-%20ML/heatmap%20for%20correlation%20matrix.png)
 
-After transforming the data we tried first a linear svc model and then a trees model but unfortunately neither of them were successful.
+### ML models Logic and implementation 
 
-![ML Models Test](https://github.com/Bayan-daux/Factors-Related-to-Mortality-and-Survival_CA_US_2014_2020/blob/main/ETL%20-%20ML/ml01.PNG)
+![picture](images/sheat_sheet.png)
 
-We have also attempted a random forest model because this model utilizes ensemble learning by combining multiple decision trees, which should result in a more accurate prediction.
+The picture above is from the Skitlearn library documentation, which is the library we used to build our ML algorithms for this analysis.
+
+looking at the picture above and with respect to the problem at hand which is a multiclass classification problem (number of classes = 22), we decided to follow the flow of the shart By creating ceveral models that are suited for this type of analysis and compare their results:
+
+#### linear SVC
+
+- What is linear SVC?
+The objective of a Linear SVC (Support Vector Classifier) is to fit to the data you provide, returning a "best fit" hyperplane that divides, or categorizes, your data. From there, after getting the hyperplane, you can then feed some features to your classifier to see what the "predicted" class is.
+
+- Pictures of the model performance:
+
+![picture](images/svc1.png)
+
+- model confusion matrix:
+
+![picture](images/svc2.png)
+
+#### Decision Trees
+
+MW definition : a tree diagram which is used for making decisions in business or computer programming and in which the branches represent choices with associated risks, costs, results, or probabilities
+
+- next we decided to use ensemble techniques and started with a simple  decision Tree:
+
+before we present the details of the algorithm, were gonna go over a metric that we used in addition tho the usal Recall, precision and F-score, 
+the ROC AUC score :
+
+![picture](images/roc_auc.png)
+
+now that we understand the ROC AUC Score this is how our Decision Tree performed:
+
+![picture](images/tree1.png)
+ 
+ - we created a feature importance table for all the features for the Tree classifier
+ ![picture](images/tree2.png)
+ 
+ - we plotted the feature importance:
+  ![picture](images/tree3.png)
+  
+ - Tree confusion matrix:
+![picture](images/tree4.png)
+
+
+#### Random forest
+
+in short Random forests are a way of averaging multiple deep decision trees, trained on different parts of the same training set, with the goal of reducing the variance.
+
+here is how random forest performed:
+
+![picture](images/tree1.png)
+ 
+ - we created a feature importance table for all the features for the Tree classifier
+ ![picture](images/tree2.png)
+ 
+ - we plotted the feature importance:
+  ![picture](images/tree3.png)
+  
+ - Tree confusion matrix:
+![picture](images/tree4.png)
 
 ## **Project Limitation**
 
