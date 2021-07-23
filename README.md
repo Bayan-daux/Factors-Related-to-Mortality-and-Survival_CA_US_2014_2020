@@ -12,9 +12,7 @@ Much of the available analyses regarding the reduction in mortality rates (incre
 This analysis can certainly be useful not just for government officials in California, but also for everday Californians. California officials can use this information to notice inequalities and potentially allocate resources to account for these inequalities. In addition, citizens of the state can always use this information to estimate the age of their own death. Everyone is going to die at some age, and mortality can often cause humans a fair amount of anxiety. This information can allow people to alleviate their fear of death or even provide some more informed sources for their anxiety.
 
 ## Dashboard
-https://public.tableau.com/app/profile/caelan.doherty/viz/California_County_Story1/Story1
-
-https://public.tableau.com/app/profile/ryan.lerner/viz/California_Front_Page/CaliforniaFrontPage?publish=yes
+https://public.tableau.com/app/profile/ryan.lerner/viz/California_Front_Page/CaliforniaFrontPage#1
 
 ## Data Source: 
 
