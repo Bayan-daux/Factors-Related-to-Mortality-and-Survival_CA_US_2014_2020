@@ -171,6 +171,48 @@ here is how adaboost performed:
  - adaboost confusion matrix:
 ![picture](images/ada4.png)
 
+## Analysis Results
+
+### Education
+
+These stacked graphs display that there isn’t too much variation in age of death between the different education levels. One might expect that a higher education leads to a longer life, but this data actually shows that people with high school educations or less tend to die at an older age than those with higher level degrees. It is possible that this can be explained simply due to the fact that older people in the past seven years don’t have as many higher-level degrees as younger age groups. 
+
+### Marital Status
+
+The trend in the marital data shows that marital status and living arrangements may be the strongest indicator of an individual’s lifespan. The graphs portray unmarried individuals dying at younger ages than their married counterparts. It also shows how the transition between different marital statuses, such as divorce or outliving a spouse, has a distinct effect on individual’s mortality. While there were noticeable disparities in these charts, it might be tough to generalize these results to apply to one’s lifestyle. For example, even though widows tend to outlive non-widows, that would easily be explained by the fact that widows have to live longer than their spouse. This essentially means that a widow would always be the 2nd person in a marriage dying, which would explain why that distribution is significantly more left skewed than other marital categories. The same logic applies to the “Never Married” category. Although it might make sense that people in relationships might live happier and longer lives, it could be hard to assume that people at younger ages are dying because they’re single. It’s more probable that younger people who die just tend to not be married yet. Aside from many of these more explainable disparities, it appears that the distribution of divorced deaths occurs at a much younger age than that of married people. 
+
+### Gender 
+
+The results in this section provide solid evidence as to what most modern data in the subject shows. There is a gender age gap, in which females tend to live longer lives than their male counterparts. While female deaths peak around the 85-94 age group, the male deaths peak lower between the 75-89 age group. It would be interesting for future analyses to look if gender differences in longevity can be attributed to gender-specific preferences and health behavior, rather than just their biological differences. 
+
+### Veteran Status
+
+Our Analysis shows that being a veteran doesn’t make a distinct difference to mortality as one might expect, given the hardship a veteran may endure in an adverse environment. The age of death for veterans is even slightly lower than that of non-veterans. It’s possible that those who participate in the military would tend to focus more on their physical health, which could lead to living a longer life. It would be interesting to conduct further exploration in longevity based on the socioeconomic differentials such as education and income in veterans and compare that to non-veterans. 
+
+
+### Ethnicity, Race and Immigration
+
+When filtering the stacked bars, it appears that white Californians have the oldest age of death compared to other ethnic groups. Asian Californians seem to be on a fairly similar distribution, but still appear to die at a slightly younger age. Black Californians also tend to die at a younger age. The distribution for non-white deaths peaks betweeen 75-89 years, while white California deaths peak between 80-94 years old. This disparity could be due to the fact that healthcare in America tends to be most effective for white Americans, while advancements in science/healthcare haven’t been optimized for ethnic minorities. An example of this theory in practice is that black women are 3-4 times more likely to die giving birth than white women in this country. 
+
+### Immigration Status
+
+For the most part, the distributions between foreign born and US-born Californians does not differ too much when viewing the above charts. As we did see some differences in ethnicity, those factors would likely account for the US-born graph being slightly more left skewed. The US-born Californians tend to die in more of the 85-94 range, while the foreign born Californians are in the 80-89 year range. However, both charts clearly have the top three bars between 80-94 years old. 
+
+
+### Urban, Suburban and Rural 
+
+When looking at the previously discussed factors in relation to urbanization, it appears that Californians who live in urban or suburban areas die at older ages than those who lives in rural areas regardless of their sex, ethnicity, education level or martial or veteran status. This could be attributed to the correlation of rural areas with other health and socioeconomic factors, such as higher poverty, lower education, and lower income. Urbanized areas are also likely to have more access to more health resources and additional infrastructure. 
+
+
+## Conclusion & Practical Application
+
+This project set out to understand the association between demographic factors and survival. Some of the studied factors could be considered controllable such as the level of education, marital status and veteran status. On the other hand, gender, ethnicity and country of birth are not controllable. However, if someone is using this data and charts to plan for retirement, it’s unlikely that they’d be able or willing to alter their education or veteran status to try to live a longer life at that stage in their life. 
+
+It is incredibly important to be aware of one’s life expectancy, or that of a given population, for various reasons. The California Department of Public Health collects this information, and they can essentially pass this on to other government agencies in California, which could more effectively estimate population trends and then allocate resources appropriately. For a policymaker, the ability to identify what factors put an individual at risk of shorter life helps in designing and building new frameworks or interventions that promote profound impact on both individuals and society. When a city or county or state aims to build more residential properties, they would want to know population growth numbers, but having an idea of the general age of death for certain groups can also be valuable information when making such decisions. We’ve also seen that ethnic minorities are dying at younger ages than white Californians are. The government could use this knowledge and decide to fund medical research that adjusts for health inequalities present in the state of California. 
+
+This information can also be useful for everyday Californians. While they may not need to make policy decisions, individuals still need to make important life decisions when it comes to education and eventually retirement/financial planning. For an individual looking at these results, it may help in making more data-driven decisions regarding pursuing an education, joining the army or understanding the benefits of healthy marriage or life partnership. And while an individual can’t do much about one’s ethnicity and place of birth, understanding how these factors correlate with longevity is important. 
+
+Unfortunately, our analysis doesn’t grant us the ability to combine these various factors for a precise prediction, but anyone can view the dashboard and make estimates based on where they fall in each category. In some ways, this might even be more practical than something like a ‘life-expectancy calculator’ that combines all factors. When an individual plans for their retirement, they need to have an estimate of how many years to financially plan for. If we created a model that told someone who is a divorced white male veteran with a high school degree that he should expect to live until 83, then that man might take that information and decide to only plan to live until 83-85. However, because it’s hard to predict death, especially without considering various health factors, this man could live until 90-95 and be misguided by that model/calculator.  Giving Californians this rough estimate will assist them in making crucial life choices, such as when to retire or how to spend money when they are retired. This information would also be helpful if you needed to make these decisions for your elderly parents or family members. Using this data can assist you in deciding whether you can afford a nursing home for ‘x’ number of years, or if your elderly parent should stay with you. If an individual is using this data to plan for retirement, it would certainly be most practical to overestimate one’s age of death in order to guarantee financial security.
 
 
 ## **Project Limitation**
