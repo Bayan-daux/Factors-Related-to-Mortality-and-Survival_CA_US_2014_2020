@@ -179,7 +179,7 @@ here is how adaboost performed:
 These stacked graphs display that there isn’t too much variation in age of death between the different education levels. One might expect that a higher education leads to a longer life, but this data actually shows that people with high school educations or less tend to die at an older age than those with higher level degrees. It is possible that this can be explained simply due to the fact that older people in the past seven years don’t have as many higher-level degrees as younger age groups. 
 
 ### Marital Status
-![picture](images/Education.png)
+![picture](images/Marital Status.png)
 
 The trend in the marital data shows that marital status and living arrangements may be the strongest indicator of an individual’s lifespan. The graphs portray unmarried individuals dying at younger ages than their married counterparts. It also shows how the transition between different marital statuses, such as divorce or outliving a spouse, has a distinct effect on individual’s mortality. While there were noticeable disparities in these charts, it might be tough to generalize these results to apply to one’s lifestyle. For example, even though widows tend to outlive non-widows, that would easily be explained by the fact that widows have to live longer than their spouse. This essentially means that a widow would always be the 2nd person in a marriage dying, which would explain why that distribution is significantly more left skewed than other marital categories. The same logic applies to the “Never Married” category. Although it might make sense that people in relationships might live happier and longer lives, it could be hard to assume that people at younger ages are dying because they’re single. It’s more probable that younger people who die just tend to not be married yet. Aside from many of these more explainable disparities, it appears that the distribution of divorced deaths occurs at a much younger age than that of married people. 
 
@@ -189,7 +189,7 @@ The trend in the marital data shows that marital status and living arrangements 
 The results in this section provide solid evidence as to what most modern data in the subject shows. There is a gender age gap, in which females tend to live longer lives than their male counterparts. While female deaths peak around the 85-94 age group, the male deaths peak lower between the 75-89 age group. It would be interesting for future analyses to look if gender differences in longevity can be attributed to gender-specific preferences and health behavior, rather than just their biological differences. 
 
 ### Veteran Status
-![picture](images/Marital Status.png)
+![picture](images/Veterans.png)
 
 Our Analysis shows that being a veteran doesn’t make a distinct difference to mortality as one might expect, given the hardship a veteran may endure in an adverse environment. The age of death for veterans is even slightly lower than that of non-veterans. It’s possible that those who participate in the military would tend to focus more on their physical health, which could lead to living a longer life. It would be interesting to conduct further exploration in longevity based on the socioeconomic differentials such as education and income in veterans and compare that to non-veterans. 
 
@@ -206,7 +206,6 @@ For the most part, the distributions between foreign born and US-born California
 
 
 ### Urban, Suburban and Rural 
-![picture](images/Education.png)
 
 When looking at the previously discussed factors in relation to urbanization, it appears that Californians who live in urban or suburban areas die at older ages than those who lives in rural areas regardless of their sex, ethnicity, education level or martial or veteran status. This could be attributed to the correlation of rural areas with other health and socioeconomic factors, such as higher poverty, lower education, and lower income. Urbanized areas are also likely to have more access to more health resources and additional infrastructure. 
 
