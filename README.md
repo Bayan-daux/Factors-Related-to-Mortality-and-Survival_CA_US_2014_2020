@@ -174,6 +174,7 @@ here is how adaboost performed:
 ## Analysis Results
 
 ### Education
+![picture](images/Education.png)
 
 These stacked graphs display that there isn’t too much variation in age of death between the different education levels. One might expect that a higher education leads to a longer life, but this data actually shows that people with high school educations or less tend to die at an older age than those with higher level degrees. It is possible that this can be explained simply due to the fact that older people in the past seven years don’t have as many higher-level degrees as younger age groups. 
 
