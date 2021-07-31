@@ -12,7 +12,7 @@ Much of the available analyses regarding the reduction in mortality rates (incre
 This analysis can certainly be useful not just for government officials in California, but also for everday Californians. California officials can use this information to notice inequalities and potentially allocate resources to account for these inequalities. In addition, citizens of the state can always use this information to estimate the age of their own death. Everyone is going to die at some age, and mortality can often cause humans a fair amount of anxiety. This information can allow individuals to plan for death and retirement by finding a rough estimate of what their age of death may be given certain demographic factors. 
 
 ## Dashboard
-https://public.tableau.com/app/profile/ryan.lerner/viz/California_Front_Page/CaliforniaFrontPage#1
+[Click here to view the interactive Dashboard](https://public.tableau.com/app/profile/ryan.lerner/viz/California_Front_Page/CaliforniaFrontPage#1)
 
 ## Data Source: 
 
@@ -212,7 +212,7 @@ When looking at the previously discussed factors in relation to urbanization, it
 
 ## Conclusion & Practical Application
 
-This project set out to understand the association between demographic factors and survival. Some of the studied factors could be considered controllable such as the level of education, marital status and veteran status. On the other hand, gender, ethnicity and country of birth are not controllable. However, if someone is using this data and charts to plan for retirement, it’s unlikely that they’d be able or willing to alter their education or veteran status to try to live a longer life at that stage in their life. 
+It appears that Californians who live in urban or suburban areas die at older ages than those who lives in rural areas. This could be attributed to the fact that rural areas tend to have higher poverty levels, lower education opportunities, and lower income. Urbanized areas are also likely to have more access to more healthcare resources and additional infrastructure.
 
 It is incredibly important to be aware of one’s life expectancy, or that of a given population, for various reasons. The California Department of Public Health collects this information, and they can essentially pass this on to other government agencies in California, which could more effectively estimate population trends and then allocate resources appropriately. For a policymaker, the ability to identify what factors put an individual at risk of a shorter life helps in designing and building new frameworks or interventions that profoundly impacts both individuals and society. When a city or county or state aims to build more residential properties, they would want to know population growth numbers, but having an idea of the general age of death for certain groups can also be valuable information when making such decisions. We’ve also seen that ethnic minorities are dying at younger ages than white Californians are. The government could use this knowledge and decide to fund medical research that adjusts for health inequalities present in the state of California. 
 
