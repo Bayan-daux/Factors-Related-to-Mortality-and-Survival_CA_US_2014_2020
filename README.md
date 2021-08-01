@@ -13,6 +13,7 @@ This analysis can certainly be useful not just for government officials in Calif
 
 ## Dashboard
 [Click here to view the interactive Dashboard](https://public.tableau.com/app/profile/caelan.doherty/viz/California_Front_Page_16278552602550/CaliforniaFrontPage?publish=yes)
+
 ![picture](images/daashboard.PNG)
 ## Data Source: 
 
