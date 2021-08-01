@@ -13,7 +13,7 @@ This analysis can certainly be useful not just for government officials in Calif
 
 ## Dashboard
 [Click here to view the interactive Dashboard](https://public.tableau.com/app/profile/caelan.doherty/viz/California_Front_Page_16278552602550/CaliforniaFrontPage?publish=yes)
-
+![picture](images/dashboard.png)
 ## Data Source: 
 
 The data used in the analysis reflects information collected and transformed by Viral Records Business Intelligence System (VRBIS) for the State of California in the years 2014–2020. This death data is derived from information entered on death certificates for California residents [3]. 
