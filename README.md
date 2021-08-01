@@ -222,13 +222,13 @@ This information can also be useful for everyday Californians. While they may no
 Unfortunately, our analysis doesn’t grant us the ability to combine these various factors for a precise prediction, but anyone can view the dashboard and make estimates based on where they fall in each category. Giving Californians this rough estimate will assist them in making crucial life choices, such as when to retire or how to spend money when they are retired. This information would also be helpful if you needed to make these decisions for your elderly parents or family members. Using this data can assist you in deciding whether you can afford a nursing home for ‘x’ number of years, or if your elderly parent should stay with you. If an individual is using this information to plan for retirement, it would certainly be most practical to overestimate one’s age of death in order to guarantee financial security.
 
 
-## **Project Limitation and Future Recommndations**
+## **Project Limitation and Future Recommendations**
 
 1. Looking at the **combined impacts** of different factors would provide a broader insight, however, due to the form of available data, we were only able to look at each factor individually. The California public health data website gave us a query tool, but only allowed us to choose one factor grouped with age bins at a time.
 2. **Granularity**: We were unable to find granular data broken down by individual with an exact age of death, so our dataset would only include total death counts in 5-year age bins.
-3. **Availability of the data** , it was hard to find datasets for other factors that would be interesting to include in this project, such as income and lifestyle behavior.
-4. **Across states**  **comparison** , not all states have the datasets in a unified form that would make it possible to combined or merge them into one to reach the form we need to have it analyzed. Therefore, we limited our project to CA state data and missed the opportunity to compare results across different states.
-5. **Explainability**, while there may be differences in the age of death distributions, it's likely that there are other reasons why the age of deaths differ. For example, widows dying at an older age could likely be due to the fact that most widows survive their spouse who dies first. 
+3. **Availability of the data**: it was hard to find datasets for other factors that would be interesting to include in this project, such as income and lifestyle behavior.
+4. **Across states**  **comparison**: not all states have the datasets in a unified form that would make it possible to combined or merge them into one to reach the form we need to have it analyzed. Therefore, we limited our project to CA state data and missed the opportunity to compare results across different states.
+5. **Explainability**: while there may be differences in the age of death distributions, it's likely that there are other reasons why the age of deaths differ. For example, widows dying at an older age could likely be due to the fact that most widows survive their spouse who dies first. 
 
 ## Reference
 
