@@ -82,14 +82,32 @@ In the first part of our machine learning process we tried to focus on showing t
 we used correlation matrices to do so, we also used Seaborn heatmaps to make the correlations clear to grasp visually : 
 
 - here are the correlation matrices: 
-
-* age categorie aggregated data heatmap:
+ 
+#### age categorie aggregated data heatmap:
 
 ![picture](images/age_agg_heatmap.png)
+##### what we can understand from the heatmap :
 
-* Feature correlation matrix :
+by looking at the heatmap we can see the distributions for each feature for every age category, we notice:
+
+* the peak for the never married death counts is at a much earlier age than the married ones.
+* for the race criteria we noticed that the highest number for white and asian deaths accure at a much later age than the other races, and the black/african american one happens much significantely earlier than the other races.
+* widows are the highest number in the oldest categories.
+* female deaths counts are higher later than males, which means women oultive men on average.
+
+
+
+####  Feature correlation matrix :
 
 ![Factors Correlation Matrix Heatmap](https://github.com/Bayan-daux/Factors-Related-to-Mortality-and-Survival_CA_US_2014_2020/blob/main/ETL%20-%20ML/heatmap%20for%20correlation%20matrix.png)
+
+##### what we can understand from the matrix :
+We can see by looking at the correlation matrix that unfortunately much of our data features are correlated. to deal with that we decided to use random forest classifiers in our analysis
+
+Desicion trees are good for this type of classification because they don't make assumptions on relationships between features. the goal is to split the node on a single feature that improves classification each time, based on an impurity measure. for example, If features A, B are heavily correlated and no information  can be gained from splitting on B after having split on A. the model would typically ignore B in favor of C.
+
+this introduces a problem of risk of overfitting, to deal with that we're going to try different ensemble algorithms to determine which algorithm results in the best performance. we will train a Random Forest Classifier and an Easy Ensemble AdaBoost classifier to see if that would improve our results from the decision tree model results
+
 
 ### ML models Logic and implementation 
 
@@ -102,6 +120,7 @@ looking at the picture above and with respect to the problem at hand which is a 
 #### linear SVC
 
 - What is linear SVC?
+
 The objective of a Linear SVC (Support Vector Classifier) is to fit to the data you provide, returning a "best fit" hyperplane that divides, or categorizes, your data. From there, after getting the hyperplane, you can then feed some features to your classifier to see what the "predicted" class is.
 
 - Pictures of the model performance:
@@ -171,6 +190,24 @@ here is how adaboost performed:
   
  - adaboost confusion matrix:
 ![picture](images/ada4.png)
+
+#### ML insights
+
+A few steps have been attempted and then removed from the processes because they were seen to affect the result in a negative way or to not have any effect on the result at all, such as different sampling and scaling methods that were attempted to achieve higher measurement scores.
+
+After our multiple attempts with the machine learning models the highest accuracy score we got was around 50% from the first model we tried which was the Support Vector Classifier model, which is not so bad for a 22 classes classification problem. but that wasnt high enough for our goal of 70% accuracy at least.
+
+For the emsemble methods we notice that the ROC_AUC score gets better after applying the bagging and then boosting techniques but the accuracy doesnt see a similar gain unfortunately.
+
+at this stage of the project we can not conclude that our models can be considered predictive but do believe that they bring valuable insight to further advance this analyses:
+
+over all we picked the Easy Ensemble AdaBoost classifier algorithm because of the result metrics. we can see from its feature importance results that the most influential factors in having a long life are features that relate to marital status and sex and education. this is insight that will serve as a starting point for the next iteration of the project, it also proves that veteran status has no affect on life expenctancy.
+
+###### WHATS NEXT?
+
+in the next step we will first try to find more data to feed the model to see if that would better the performance.
+later on the focus would be to find data recorded on a personal level from a study or other type of data collection thats to the personal level. we beleive that that would be the key for a succesful life expectancy machine learning model.
+
 
 ## Analysis Results
 
